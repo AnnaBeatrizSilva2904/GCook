@@ -1,0 +1,13 @@
+configuração da conta local do GIT:
+git config --global user.name AnnaBeatrizSilva2904
+git config --global user.email annabeatryz2504@gmail.com
+
+---------------------------//---------------------------
+
+Executar, no terminal, 1 por vez, em ordem:
+- dotnet new mvc -o GCook
+- dotnet new sln --name GCook
+- dotnet sln add GCook\GCook.csproj
+
+Entrar na pasta do projeto:
+- cd GCook
