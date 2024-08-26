@@ -11,3 +11,15 @@ Executar, no terminal, 1 por vez, em ordem:
 
 Entrar na pasta do projeto:
 - cd GCook
+
+Criando e executando migrações:
+-   dotnet ef
+
+    Atualizar a ferramenta:
+    -   dotnet tool update --global dotnet-ef --version 8.0.8
+
+    Criar uma migração:
+    -   dotnet ef migrations add criarBanco
+
+    Aplicar a migração:
+    -   dotnet ef database update
