@@ -41,16 +41,16 @@ public class AccountController : Controller
             if (result.IsLockedOut)
                 return RedirectToAction("Lockout");
             if (result.IsNotAllowed)
-                ModelState.AddModelError(string.Empty, "Sua conta não está confirmada, verifique seu email!");
+                ModelState.AddModelError(string.Empty, "Sua conta não está confirmada, verifique seu email!!");
             else
-                ModelState.AddModelError(string.Empty, "Usuário e/ou senha inválidos!");
+                ModelState.AddModelError(string.Empty, "Usuário e/ou Senha Inválidos!!!");
         }
         return View(login);
     }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> logout()
+    public async Task<IActionResult> Logout()
     {
         await _usuarioService.LogoffUsuario();
         return RedirectToAction("Index", "Home");

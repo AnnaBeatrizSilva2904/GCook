@@ -16,7 +16,7 @@ public class EmailSender : IEmailSender
             Credentials = new NetworkCredential(mail, pw)
         };
 
-        MailMessage sendMail = new (
+        MailMessage sendMail = new(
             from: mail,
             to: emailAddress,
             subject,

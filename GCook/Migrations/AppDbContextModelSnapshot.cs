@@ -17,7 +17,7 @@ namespace GCook.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.8")
+                .HasAnnotation("ProductVersion", "8.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -431,9 +431,9 @@ namespace GCook.Migrations
                         new
                         {
                             UsuarioId = "ddf093a6-6cb5-4ff7-9a64-83da34aee005",
-                            DataNascimento = new DateTime(2008, 4, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DataNascimento = new DateTime(1981, 5, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/img/usuarios/avatar.png",
-                            Nome = "Ana Beatriz da Silva"
+                            Nome = "José Antonio Gallo Junior"
                         });
                 });
 
@@ -576,15 +576,15 @@ namespace GCook.Migrations
                         {
                             Id = "ddf093a6-6cb5-4ff7-9a64-83da34aee005",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1e473531-3b41-4bee-a26f-ff764d270ee6",
+                            ConcurrencyStamp = "7aaf247d-0a55-4192-8028-e4a1dde73b3c",
                             Email = "admin@gcook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GCOOK.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJUxWaideX/xztTIzULBaHGpOBsPx69OfeYYnVXHqSvIXfhvYTy8J3JhyjZ6HwjpfA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFcpZthWGAi6KHOu+/7yRjmTt/hl6Hxlchmhde3XPbCdjm1KWBt7Fv+poarsR0kGyw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "916e8d18-a137-461b-adb8-0ebd3b0535ab",
+                            SecurityStamp = "e8331602-5b3b-4358-a851-5c63bad146dd",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });

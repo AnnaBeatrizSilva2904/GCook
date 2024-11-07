@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GCook.Migrations
 {
     /// <inheritdoc />
-    public partial class criarBanco : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -360,7 +360,7 @@ namespace GCook.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "ddf093a6-6cb5-4ff7-9a64-83da34aee005", 0, "1e473531-3b41-4bee-a26f-ff764d270ee6", "admin@gcook.com", true, false, null, "ADMIN@GCOOK.COM", "ADMIN", "AQAAAAIAAYagAAAAEJUxWaideX/xztTIzULBaHGpOBsPx69OfeYYnVXHqSvIXfhvYTy8J3JhyjZ6HwjpfA==", null, false, "916e8d18-a137-461b-adb8-0ebd3b0535ab", false, "Admin" });
+                values: new object[] { "ddf093a6-6cb5-4ff7-9a64-83da34aee005", 0, "7aaf247d-0a55-4192-8028-e4a1dde73b3c", "admin@gcook.com", true, false, null, "ADMIN@GCOOK.COM", "ADMIN", "AQAAAAIAAYagAAAAEFcpZthWGAi6KHOu+/7yRjmTt/hl6Hxlchmhde3XPbCdjm1KWBt7Fv+poarsR0kGyw==", null, false, "e8331602-5b3b-4358-a851-5c63bad146dd", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "Categoria",
@@ -418,7 +418,7 @@ namespace GCook.Migrations
             migrationBuilder.InsertData(
                 table: "Usuario",
                 columns: new[] { "UsuarioId", "DataNascimento", "Foto", "Nome" },
-                values: new object[] { "ddf093a6-6cb5-4ff7-9a64-83da34aee005", new DateTime(2008, 4, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), "/img/usuarios/avatar.png", "Ana Beatriz da Silva" });
+                values: new object[] { "ddf093a6-6cb5-4ff7-9a64-83da34aee005", new DateTime(1981, 5, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), "/img/usuarios/avatar.png", "José Antonio Gallo Junior" });
 
             migrationBuilder.InsertData(
                 table: "ReceitaIngrediente",

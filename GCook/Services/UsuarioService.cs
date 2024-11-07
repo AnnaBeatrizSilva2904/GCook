@@ -131,9 +131,9 @@ public class UsuarioService : IUsuarioService
 
             await _userManager.AddToRoleAsync(user, "Usuário");
 
-            await _emailSender.SendEmailAsync(registro.Email, "Gcook - Criação de conta", GetConfirmEmailHtml(HtmlEncoder.Default.Encode(url)));
+            await _emailSender.SendEmailAsync(registro.Email, "GCook - Criação de Conta", GetConfirmEmailHtml(HtmlEncoder.Default.Encode(url)));
 
-            // Criar conta pessoal do usuário
+            // Cria a conta pessoal do usuário
             Usuario usuario = new()
             {
                 UsuarioId = userId,

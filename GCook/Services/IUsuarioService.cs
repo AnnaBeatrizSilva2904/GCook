@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 namespace GCook.Services;
 
 public interface IUsuarioService
-{   
+{
     Task<UsuarioVM> GetUsuarioLogado();
     Task<SignInResult> LoginUsuario(LoginVM login);
     Task LogoffUsuario();
