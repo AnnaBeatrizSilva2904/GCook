@@ -25,7 +25,6 @@
                 <label asp-for="Foto" class="control-label"></label>
                 <img id='Preview'>
                 <input name="Foto" type="file" class="form-control" accept=".jpg,.png,.jpeg,.gif" />
-                <span asp-validation-for="Foto" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <input type="submit" value="Salvar" class="btn btn-primary" />
@@ -35,3 +34,17 @@
     </div>
 </div>
 
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"></partial>
+    <script>
+        window.addEventListener('load', function() {
+            document.querySelector('input[type=file]')
+            .addEventListener('change', function(){
+                if (this.files && this.files[0]) {
+                    var img = document.getElementById('Preview');
+                    img.src = URL.createObjectURL(this.files[0]);
+                }
+            })
+        })
+    </script>
+}
