@@ -25,4 +25,4 @@ Criando e executando migrações:
     -   dotnet ef database update
 
 
-dotnet-aspnet-codegenerator controller -name CategoriasController -m Categoria -dc AppDbContext -outDir Controllers -l i "~/Views/Shared/_LayoutAdmin.cshtml"
+dotnet-aspnet-codegenerator controller -name ReceitasController -m Receita -dc AppDbContext -outDir Controllers -l "~/Views/Shared/_LayoutAdmin.cshtml"
