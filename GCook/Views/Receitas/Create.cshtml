@@ -33,7 +33,7 @@
             </div>
             <div class="mb-3">
                 <label asp-for="Dificuldade" class="control-label"></label>
-                <select asp-for="Dificuldade" class="form-control"></select>
+                <select asp-for="Dificuldade" class="form-control" asp-items="Html.GetEnumSelectList<Dificuldade>()"></select>
                 <span asp-validation-for="Dificuldade" class="text-danger"></span>
             </div>
             <div class="mb-3">
